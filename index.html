@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integra Moda - PLM · ERP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #FAFAFA; color: #111111; }
+    .logo-partner { filter: grayscale(1) opacity(0.4); transition: filter 0.2s, opacity 0.2s; }
+    .logo-partner:hover { filter: grayscale(0) opacity(1); }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Announcement bar -->
+  <div class="bg-[#FFF7ED] border-b border-[#FED7AA]">
+    <a href="#precos" class="block">
+      <div class="max-w-5xl mx-auto px-8 h-9 flex items-center justify-center gap-2">
+        <span class="text-[11px] font-semibold bg-[#F97316] text-white px-2 py-0.5 rounded-full">Lançamento</span>
+        <span class="text-[12px] text-[#9A3412]">Aproveite o desconto promocional de lançamento da Integra Moda</span>
+        <span class="text-[12px] text-[#F97316] font-medium">· Ver preços →</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-8 h-14 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <img src="assets/logo-simbolo.png" alt="" class="h-7 w-auto">
+        <div class="leading-tight">
+          <div class="text-[13px] font-semibold tracking-tight text-[#111111]">Integra Moda</div>
+          <div class="text-[9px] text-[#BBBBBB] tracking-[0.1em] font-medium uppercase">PLM · ERP</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-7">
+        <a href="#como-funciona" class="text-sm text-[#111111] hover:opacity-50 transition-opacity">Como funciona</a>
+        <a href="#erps" class="text-sm text-[#111111] hover:opacity-50 transition-opacity">ERPs</a>
+        <a href="#precos" class="text-sm text-[#111111] hover:opacity-50 transition-opacity">Preços</a>
+        <a href="mailto:comercial@setbox.com.br" class="text-sm bg-[#F97316] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#EA580C] transition-colors font-medium">Falar com a equipe</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="bg-[#F7F7F7] border-b border-[#E8E8E8]">
+      <div class="max-w-4xl mx-auto px-8 pt-20 pb-16 text-center">
+        <h1 class="text-[58px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#111111] mb-6">
+          Do PLM ao ERP,<br>sem uma linha de código.
+        </h1>
+        <p class="text-[17px] leading-[1.7] text-[#555555] max-w-2xl mx-auto mb-10">
+          A Integra Moda conecta a Coleção Moda ao seu ERP com sincronismo bilateral em tempo real, eliminando digitação manual, reduzindo erros e acelerando o ciclo de desenvolvimento de coleções.
+        </p>
+        <div class="flex items-center justify-center gap-4">
+          <a href="mailto:comercial@setbox.com.br" class="text-[14px] bg-[#F97316] text-white px-6 py-3 rounded-[6px] hover:bg-[#EA580C] transition-colors font-semibold">
+            Agendar uma conversa →
+          </a>
+          <a href="#como-funciona" class="text-[14px] text-[#888888] hover:text-[#111111] transition-colors font-medium">
+            Ver como funciona
+          </a>
+        </div>
+      </div>
+
+      <!-- App screenshot hero -->
+      <div class="max-w-5xl mx-auto px-8 pb-0">
+        <div class="rounded-t-xl overflow-hidden border border-b-0 border-[#E0E0E0] shadow-lg">
+          <img src="../docs/biblioteca/prints/organizations.png" alt="Painel de organizações - Integra Moda" class="w-full block">
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE: ORGANIZAÇÕES -->
+    <section class="py-24 border-b border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="grid grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-[11px] text-[#F97316] font-semibold tracking-wide uppercase mb-3">Organizações</p>
+            <h2 class="text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              Acompanhe cada sincronização sem precisar abrir ticket.
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-6">
+              A plataforma Integra Moda dá visibilidade total sobre o que acontece com os seus dados - sem precisar ligar para o suporte para saber se uma informação chegou no ERP.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex gap-3 text-[14px] text-[#444444]">
+                <span class="text-[#F97316] flex-shrink-0 font-bold">→</span>
+                <span>Status da integração atualizado em tempo real</span>
+              </li>
+              <li class="flex gap-3 text-[14px] text-[#444444]">
+                <span class="text-[#F97316] flex-shrink-0 font-bold">→</span>
+                <span>Saiba exatamente quando cada dado foi enviado ao ERP e se chegou com sucesso</span>
+              </li>
+              <li class="flex gap-3 text-[14px] text-[#444444]">
+                <span class="text-[#F97316] flex-shrink-0 font-bold">→</span>
+                <span>Notificações automáticas em caso de falha - sem depender de ninguém para descobrir</span>
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm">
+            <img src="../docs/biblioteca/prints/organizations.png" alt="Painel de organizações" class="w-full block">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE: WORKFLOWS -->
+    <section class="py-24 border-b border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="grid grid-cols-2 gap-16 items-center">
+          <div class="rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm">
+            <img src="../docs/biblioteca/prints/workflows.png" alt="Histórico de workflows" class="w-full block">
+          </div>
+          <div>
+            <p class="text-[11px] text-[#F97316] font-semibold tracking-wide uppercase mb-3">Workflows</p>
+            <h2 class="text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              Histórico completo de cada integração.
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-4">
+              Cada sincronização gera um registro completo. Falhas são visíveis imediatamente.
+            </p>
+
+            <ul class="space-y-2 mb-6">
+              <li class="flex gap-2.5 text-[13px] text-[#555555]">
+                <span class="text-[#F97316] flex-shrink-0">→</span>
+                <span>Notificações por e-mail automáticas em caso de falha - destinatários e frequência configuráveis na plataforma</span>
+              </li>
+              <li class="flex gap-2.5 text-[13px] text-[#555555]">
+                <span class="text-[#F97316] flex-shrink-0">→</span>
+                <span>90 dias de histórico retidos - com payload completo para reprocessamento manual</span>
+              </li>
+            </ul>
+
+            <table class="w-full text-[13px]">
+              <thead>
+                <tr class="border-b border-[#E5E5E5]">
+                  <th class="text-left text-[#999999] font-medium pb-2 pr-4">Campo</th>
+                  <th class="text-left text-[#999999] font-medium pb-2">Detalhe</th>
+                </tr>
+              </thead>
+              <tbody class="text-[#444444]">
+                <tr class="border-b border-[#F5F5F5]">
+                  <td class="py-2.5 pr-4 font-medium">Integração</td>
+                  <td class="py-2.5 text-[#666666]">Fluxo executado (ex: Coleção Moda → TOTVS)</td>
+                </tr>
+                <tr class="border-b border-[#F5F5F5]">
+                  <td class="py-2.5 pr-4 font-medium">Recebido em</td>
+                  <td class="py-2.5 text-[#666666]">Data e hora do evento na origem</td>
+                </tr>
+                <tr class="border-b border-[#F5F5F5]">
+                  <td class="py-2.5 pr-4 font-medium">Duração</td>
+                  <td class="py-2.5 text-[#666666]">Tempo total de processamento em segundos</td>
+                </tr>
+                <tr class="border-b border-[#F5F5F5]">
+                  <td class="py-2.5 pr-4 font-medium">Dados de origem</td>
+                  <td class="py-2.5 text-[#666666]">Payload completo recebido da origem</td>
+                </tr>
+                <tr class="border-b border-[#F5F5F5]">
+                  <td class="py-2.5 pr-4 font-medium">Dados enviados</td>
+                  <td class="py-2.5 text-[#666666]">Payload transformado e enviado ao destino</td>
+                </tr>
+                <tr class="border-b border-[#F5F5F5]">
+                  <td class="py-2.5 pr-4 font-medium">Resposta do destino</td>
+                  <td class="py-2.5 text-[#666666]">Retorno da API, sucesso ou detalhe do erro</td>
+                </tr>
+                <tr class="border-b border-[#F5F5F5]">
+                  <td class="py-2.5 pr-4 font-medium">Tentativas</td>
+                  <td class="py-2.5 text-[#666666]">Número de reprocessamentos automáticos em caso de falha</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 pr-4 font-medium">Status</td>
+                  <td class="py-2.5">
+                    <span class="text-[11px] font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded-full">Sucesso</span>
+                    <span class="text-[11px] font-semibold text-red-700 bg-red-100 px-2 py-0.5 rounded-full ml-1">Falha</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="py-24 bg-[#F7F7F7] border-b border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-8">
+        <p class="text-[11px] text-[#F97316] font-semibold tracking-wide uppercase mb-3 text-center">Como funciona</p>
+        <h2 class="text-[38px] font-bold leading-[1.15] tracking-tight text-[#111111] mb-4 text-center">
+          Nunca mais comece do zero.
+        </h2>
+        <p class="text-[15px] text-[#666666] text-center max-w-xl mx-auto mb-16">
+          A Coleção Moda sincroniza. A Integra Moda processa. O ERP atualiza. Em ambas as direções.
+        </p>
+
+        <div class="grid grid-cols-3 gap-10">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <img src="assets/logo-colecaomoda.png" alt="Coleção Moda" class="w-7 h-7 rounded-md object-cover">
+              <span class="text-[28px] font-bold text-[#EBEBEB]">01</span>
+            </div>
+            <h3 class="text-[15px] font-semibold text-[#111111] mb-2">PLM envia o evento</h3>
+            <p class="text-[13px] leading-[1.75] text-[#666666]">
+              Protótipos, produtos, materiais e coleções criados ou atualizados na Coleção Moda são capturados automaticamente pelo Integra Moda - sem exportação de arquivo, sem digitação, sem intervenção da sua equipe.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <img src="assets/logo-simbolo.png" alt="Integra Moda" class="w-7 h-7 object-contain">
+              <span class="text-[28px] font-bold text-[#EBEBEB]">02</span>
+            </div>
+            <h3 class="text-[15px] font-semibold text-[#111111] mb-2">Motor de mapeamento processa</h3>
+            <p class="text-[13px] leading-[1.75] text-[#666666]">
+              O motor de mapeamento converte os campos da Coleção Moda para o formato do ERP conforme as regras de negócio configuradas. Formatos, obrigatoriedades e validações são aplicados automaticamente.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <div class="w-7 h-7 rounded-md bg-[#111111] flex items-center justify-center">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="text-[28px] font-bold text-[#EBEBEB]">03</span>
+            </div>
+            <h3 class="text-[15px] font-semibold text-[#111111] mb-2">ERP atualizado em tempo real</h3>
+            <p class="text-[13px] leading-[1.75] text-[#666666]">
+              Os dados formatados chegam no ERP via API REST. Falhas são tratadas com reprocessamento automático. Nenhum dado é descartado - tudo fica no histórico de workflows.
+            </p>
+          </div>
+        </div>
+
+        <!-- Setup steps table -->
+        <div class="mt-16 bg-white border border-[#E5E5E5] rounded-xl overflow-hidden">
+          <div class="px-6 py-4 border-b border-[#F0F0F0]">
+            <p class="text-[13px] font-semibold text-[#111111]">Etapas do setup de integração</p>
+          </div>
+          <table class="w-full text-[13px]">
+            <thead class="bg-[#FAFAFA]">
+              <tr class="border-b border-[#F0F0F0]">
+                <th class="text-left text-[#999999] font-medium px-6 py-3">Etapa</th>
+                <th class="text-left text-[#999999] font-medium px-4 py-3">Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-[#F5F5F5]">
+                <td class="px-6 py-4 font-medium text-[#111111]">Setup &amp; Mapeamento</td>
+                <td class="px-4 py-4 text-[#666666]">Levantamento de campos, construção do mapeamento de campos, configuração de credenciais e estruturação do ambiente</td>
+              </tr>
+              <tr class="border-b border-[#F5F5F5]">
+                <td class="px-6 py-4 font-medium text-[#111111]">Desenvolvimento</td>
+                <td class="px-4 py-4 text-[#666666]">Autenticação com a API do ERP, mapeamento de campos e sincronização de protótipos, produtos, coleções, materiais, grades, preços e imagens</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium text-[#111111]">Testes &amp; Homologação</td>
+                <td class="px-4 py-4 text-[#666666]">Validação completa, correções e aceite final com documentação técnica incluída</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ERPs SUPORTADOS -->
+    <section id="erps" class="py-24 border-b border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-8">
+        <p class="text-[11px] text-[#F97316] font-semibold tracking-wide uppercase mb-3 text-center">ERPs suportados</p>
+        <h2 class="text-[38px] font-bold leading-[1.15] tracking-tight text-[#111111] mb-4 text-center">
+          Compatível com os principais ERPs<br>do setor têxtil.
+        </h2>
+        <p class="text-[15px] text-[#666666] text-center max-w-lg mx-auto mb-16">
+          Conectores nativos desenvolvidos e mantidos pela equipe da Integra Moda. Novos ERPs sob consulta.
+        </p>
+
+        <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 mb-8">
+          <img src="assets/logo-totvs.png" alt="TOTVS" class="logo-partner h-7 w-auto">
+          <img src="assets/logo-sisplan.png" alt="Sisplan" class="logo-partner h-8 w-auto">
+          <img src="assets/logo-linx.png" alt="Linx" class="logo-partner h-8 w-auto">
+          <img src="assets/logo-senior.png" alt="Senior Sistemas" class="logo-partner h-7 w-auto">
+          <img src="assets/logo-adsomos.png" alt="Adsomos" class="logo-partner h-6 w-auto">
+          <img src="assets/logo-consistem.svg" alt="Consistem" class="logo-partner h-7 w-auto">
+        </div>
+
+        <!-- ERP table -->
+        <div class="bg-white border border-[#E5E5E5] rounded-xl overflow-hidden mt-10">
+          <div class="px-6 py-4 border-b border-[#F0F0F0]">
+            <p class="text-[13px] font-semibold text-[#111111]">Conectores disponíveis</p>
+          </div>
+          <table class="w-full text-[13px]">
+            <thead class="bg-[#FAFAFA]">
+              <tr class="border-b border-[#F0F0F0]">
+                <th class="text-left text-[#999999] font-medium px-6 py-3">ERP</th>
+                <th class="text-left text-[#999999] font-medium px-4 py-3">Segmento</th>
+                <th class="text-left text-[#999999] font-medium px-4 py-3">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-[#F5F5F5]">
+                <td class="px-6 py-3.5 font-medium text-[#111111]">TOTVS Moda</td>
+                <td class="px-4 py-3.5 text-[#666666]">Têxtil / Moda</td>
+                <td class="px-4 py-3.5"><span class="text-[11px] font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded-full">Disponível</span></td>
+              </tr>
+              <tr class="border-b border-[#F5F5F5]">
+                <td class="px-6 py-3.5 font-medium text-[#111111]">Sisplan</td>
+                <td class="px-4 py-3.5 text-[#666666]">Têxtil / Confecção</td>
+                <td class="px-4 py-3.5"><span class="text-[11px] font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded-full">Disponível</span></td>
+              </tr>
+              <tr class="border-b border-[#F5F5F5]">
+                <td class="px-6 py-3.5 font-medium text-[#111111]">Linx</td>
+                <td class="px-4 py-3.5 text-[#666666]">Varejo / Moda</td>
+                <td class="px-4 py-3.5"><span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">Em breve</span></td>
+              </tr>
+              <tr class="border-b border-[#F5F5F5]">
+                <td class="px-6 py-3.5 font-medium text-[#111111]">Senior Sistemas</td>
+                <td class="px-4 py-3.5 text-[#666666]">Gestão Empresarial</td>
+                <td class="px-4 py-3.5"><span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">Em breve</span></td>
+              </tr>
+              <tr class="border-b border-[#F5F5F5]">
+                <td class="px-6 py-3.5 font-medium text-[#111111]">Adsomos</td>
+                <td class="px-4 py-3.5 text-[#666666]">Gestão Empresarial</td>
+                <td class="px-4 py-3.5"><span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">Em breve</span></td>
+              </tr>
+              <tr class="border-b border-[#F5F5F5]">
+                <td class="px-6 py-3.5 font-medium text-[#111111]">Consistem</td>
+                <td class="px-4 py-3.5 text-[#666666]">Gestão Empresarial</td>
+                <td class="px-4 py-3.5"><span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">Em breve</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3.5 text-[#AAAAAA] italic" colspan="3">Systextil, Virtual Age, Vexta, Organiza Têxtil, Produtec, entre outros.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS / PLANO -->
+    <section class="py-24 border-b border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="grid grid-cols-2 gap-16 items-start">
+          <div>
+            <p class="text-[11px] text-[#F97316] font-semibold tracking-wide uppercase mb-3">Tudo incluído</p>
+            <h2 class="text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              Nunca mais procure por um evento que sumiu.
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-8">
+              90 dias de histórico completo de cada integração processada. Cada webhook, cada transformação, cada resposta do ERP - tudo registrado e auditável.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex gap-3 items-start">
+                <span class="text-[#F97316] flex-shrink-0 font-bold mt-0.5">✓</span>
+                <div>
+                  <p class="text-[14px] font-medium text-[#111111]">Zero retrabalho</p>
+                  <p class="text-[13px] text-[#888888]">Dados fluem automaticamente - sem digitação manual, sem importação de arquivos</p>
+                </div>
+              </li>
+              <li class="flex gap-3 items-start">
+                <span class="text-[#F97316] flex-shrink-0 font-bold mt-0.5">✓</span>
+                <div>
+                  <p class="text-[14px] font-medium text-[#111111]">Sincronismo bilateral</p>
+                  <p class="text-[13px] text-[#888888]">Fluxo em duas vias - do PLM para o ERP e do ERP para o PLM</p>
+                </div>
+              </li>
+              <li class="flex gap-3 items-start">
+                <span class="text-[#F97316] flex-shrink-0 font-bold mt-0.5">✓</span>
+                <div>
+                  <p class="text-[14px] font-medium text-[#111111]">Tarefas agendadas</p>
+                  <p class="text-[13px] text-[#888888]">Configure sincronismos periódicos de imagens, precificação, grade e outros dados</p>
+                </div>
+              </li>
+              <li class="flex gap-3 items-start">
+                <span class="text-[#F97316] flex-shrink-0 font-bold mt-0.5">✓</span>
+                <div>
+                  <p class="text-[14px] font-medium text-[#111111]">Mapeamento de campos configurável</p>
+                  <p class="text-[13px] text-[#888888]">Mapeamento de campos específico para sua operação</p>
+                </div>
+              </li>
+              <li class="flex gap-3 items-start">
+                <span class="text-[#F97316] flex-shrink-0 font-bold mt-0.5">✓</span>
+                <div>
+                  <p class="text-[14px] font-medium text-[#111111]">Sem limite de marcas</p>
+                  <p class="text-[13px] text-[#888888]">Gerencie toda sua estrutura em uma única plataforma</p>
+                </div>
+              </li>
+              <li class="flex gap-3 items-start">
+                <span class="text-[#F97316] flex-shrink-0 font-bold mt-0.5">✓</span>
+                <div>
+                  <p class="text-[14px] font-medium text-[#111111]">Disponibilidade 24/7</p>
+                  <p class="text-[13px] text-[#888888]">Infraestrutura gerenciada pela equipe da Integra Moda</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pricing card -->
+          <div id="precos">
+            <div class="border border-[#E5E5E5] rounded-xl p-8 bg-white">
+              <p class="text-[12px] text-[#999999] font-medium uppercase tracking-wide mb-4">Plano mensal</p>
+              <div class="flex items-baseline gap-1.5 mb-1">
+                <span class="text-[42px] font-bold text-[#111111] tracking-tight">R$ 480</span>
+                <span class="text-[15px] text-[#AAAAAA]">/mês</span>
+              </div>
+              <p class="text-[12px] text-[#BBBBBB] mb-8">Impostos inclusos · cobrado mensalmente</p>
+
+              <ul class="space-y-2.5 mb-8">
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Plataforma 24h/dia, 7 dias/semana</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Sincronismo bilateral PLM ↔ ERP</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Mapeamento de campos configurável</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Histórico de 90 dias</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Logs de sucesso e falha em tempo real</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Alertas por e-mail em caso de falha (configurável)</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Até 3 usuários para monitoramento</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>2.000 requisições/mês inclusas</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Sem limite de marcas</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Suporte via e-mail (seg–sex)</li>
+                <li class="flex gap-2.5 text-[13px] text-[#444444]"><span class="text-[#F97316]">✓</span>Treinamento virtual de 1h incluso</li>
+              </ul>
+
+              <div class="border-t border-[#F5F5F5] pt-5 mb-5">
+                <p class="text-[12px] text-[#AAAAAA]">
+                  + R$ 25/mês por usuário adicional<br>
+                  Setup cobrado separadamente - <a href="mailto:comercial@setbox.com.br" class="text-[#F97316]">solicite proposta</a>
+                </p>
+              </div>
+
+              <a href="mailto:comercial@setbox.com.br" class="block w-full bg-[#F97316] text-white text-[14px] font-semibold text-center py-3 rounded-[6px] hover:bg-[#EA580C] transition-colors">
+                Falar com a equipe →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="py-24 bg-[#F7F7F7] border-b border-[#E5E5E5]">
+      <div class="max-w-3xl mx-auto px-8 text-center">
+        <h2 class="text-[42px] font-bold leading-[1.15] tracking-tight text-[#111111] mb-6">
+          Pronto para integrar?
+        </h2>
+        <p class="text-[16px] leading-[1.75] text-[#666666] mb-10 max-w-xl mx-auto">
+          Se sua equipe ainda transfere dados do PLM para o ERP por digitação ou exportação e importação de arquivos, cada coleção tem um custo invisível. Fale com a nossa equipe.
+        </p>
+        <div class="flex items-center justify-center gap-4 mb-10">
+          <a href="mailto:comercial@setbox.com.br" class="text-[14px] bg-[#F97316] text-white px-6 py-3 rounded-[6px] hover:bg-[#EA580C] transition-colors font-semibold">
+            Agendar uma conversa →
+          </a>
+        </div>
+        <div class="flex items-center justify-center gap-6 text-[13px] text-[#999999]">
+          <a href="mailto:comercial@setbox.com.br" class="hover:text-[#F97316] transition-colors">comercial@setbox.com.br</a>
+          <span>·</span>
+          <a href="tel:+5541996556308" class="hover:text-[#111111] transition-colors">(41) 99907-3688</a>
+          <span>·</span>
+          <span>integramoda.com.br</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-8 py-14 flex gap-16">
+      <div class="flex-shrink-0 min-w-[180px]">
+        <img src="assets/logo-integramoda.png" alt="Integra Moda" class="h-10 w-auto mb-5">
+        <p class="text-[11px] text-[#BBBBBB] mb-1.5 uppercase tracking-wide font-medium">Uma marca</p>
+        <a href="https://setbox.com.br" target="_blank" rel="noopener"><img src="assets/logo-setbox.png" alt="Setbox" class="h-5 w-auto mb-4 opacity-50 hover:opacity-100 transition-opacity"></a>
+        <p class="text-[12px] text-[#BBBBBB] mt-1">© 2026 Setbox Serviços Digitais</p>
+        <div class="flex items-center gap-1.5 mt-3">
+          <span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span>
+          <span class="text-[12px] text-[#BBBBBB]">Operacional</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-12 flex-1">
+        <div>
+          <p class="text-[12px] font-semibold text-[#111111] mb-4">Produto</p>
+          <ul class="space-y-2.5">
+            <li><a href="#como-funciona" class="text-[12px] text-[#888888] hover:text-[#111111] transition-colors">Como funciona</a></li>
+            <li><a href="#erps" class="text-[12px] text-[#888888] hover:text-[#111111] transition-colors">ERPs suportados</a></li>
+            <li><a href="#precos" class="text-[12px] text-[#888888] hover:text-[#111111] transition-colors">Preços</a></li>
+            <li><a href="#" class="text-[12px] text-[#888888] hover:text-[#111111] transition-colors">Documentação</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[12px] font-semibold text-[#111111] mb-4">Empresa</p>
+          <ul class="space-y-2.5">
+            <li><a href="https://setbox.com.br" class="text-[12px] text-[#888888] hover:text-[#111111] transition-colors">Setbox</a></li>
+            <li><a href="mailto:comercial@setbox.com.br" class="text-[12px] text-[#888888] hover:text-[#111111] transition-colors">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[12px] font-semibold text-[#111111] mb-4">Legal</p>
+          <ul class="space-y-2.5">
+            <li><a href="#" class="text-[12px] text-[#888888] hover:text-[#111111] transition-colors">Privacidade</a></li>
+            <li><a href="#" class="text-[12px] text-[#888888] hover:text-[#111111] transition-colors">Termos de Uso</a></li>
+            <li><a href="#" class="text-[12px] text-[#888888] hover:text-[#111111] transition-colors">LGPD</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
